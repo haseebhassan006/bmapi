@@ -25,6 +25,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "style-loader": "^3.3.0",
         "vue-router": "^3.5.2",
         "vuesax": "^4.0.1-alpha.25"
     }

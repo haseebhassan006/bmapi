@@ -30,9 +30,9 @@ const routes = [
         name: "Create Song",
     },
     {
-        path: "/create/categories",
-        component: () => setComponent("category/CategoryForm"),
-        name: "Create Song",
+        path: "/category",
+        component: () => setComponent("category/Category"),
+        name: "category",
     },
 
 

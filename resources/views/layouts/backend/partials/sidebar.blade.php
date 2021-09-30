@@ -31,11 +31,13 @@
             <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="home"></i><span>Dashboard</span></a>
               <ul class="nav-submenu menu-content">
                 <li><router-link to="/admin">Dashboard</router-link></li>
+                <li><router-link to="/category">Category</router-link></li>
+                <li><router-link to="/songs">Song</router-link></li>
 
               </ul>
             </li>
 
-            <li class="dropdown"><a class="nav-link menu-title link-nav" href="bookmark.html"><i data-feather="heart"></i><span>Bookmarks</span></a></li>
+            <li ><router-link class="nav-link menu-title link-nav" to="/category"><i data-feather="heart"></i><span>Category</span></router-link></li>
             <li class="dropdown"><a class="nav-link menu-title link-nav" href="contacts.html"><i data-feather="list"></i><span>Contacts</span></a></li>
             <li class="dropdown"><a class="nav-link menu-title link-nav" href="task.html"><i data-feather="check-square"></i><span>Tasks</span></a></li>
             <li class="dropdown"><a class="nav-link menu-title link-nav" href="calendar-basic.html"><i data-feather="calendar"></i><span>Calender        </span></a></li>
