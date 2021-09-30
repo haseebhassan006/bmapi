@@ -19,16 +19,16 @@ const routes = [
         redirect: { path: '/admin' }
     },
     { path: "/admin", component: () => setComponent("dashboard/Home"), name: "Home" },
-    // {
-    //     path: "/users",
-    //     component: () => setComponent("management/user/User"),
-    //     name: "users",
-    // },
-    // {
-    //     path: "/create/user",
-    //     component: () => setComponent("management/user/UserForm"),
-    //     name: "Create User",
-    // },
+    {
+        path: "/songs",
+        component: () => setComponent("songs/Song"),
+        name: "songs",
+    },
+    {
+        path: "/create/songs",
+        component: () => setComponent("songs/SongForm"),
+        name: "Create Song",
+    },
 
     // {
     //     path: "/edit/user/:id",

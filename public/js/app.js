@@ -2215,17 +2215,19 @@ var routes = [{
     return setComponent("dashboard/Home");
   },
   name: "Home"
+}, {
+  path: "/songs",
+  component: function component() {
+    return setComponent("songs/Song");
+  },
+  name: "songs"
+}, {
+  path: "/create/songs",
+  component: function component() {
+    return setComponent("songs/SongForm");
+  },
+  name: "Create Song"
 } // {
-//     path: "/users",
-//     component: () => setComponent("management/user/User"),
-//     name: "users",
-// },
-// {
-//     path: "/create/user",
-//     component: () => setComponent("management/user/UserForm"),
-//     name: "Create User",
-// },
-// {
 //     path: "/edit/user/:id",
 //     component: () => setComponent("management/user/UserForm"),
 //     name: "update-user",
@@ -53122,6 +53124,36 @@ var map = {
 		9,
 		"resources_js_components_backend_pages_error_404Component_vue"
 	],
+	"./components/backend/pages/songs/SongComponent": [
+		"./resources/js/components/backend/pages/songs/SongComponent.vue",
+		9,
+		"resources_js_components_backend_pages_songs_SongComponent_vue"
+	],
+	"./components/backend/pages/songs/SongComponent.vue": [
+		"./resources/js/components/backend/pages/songs/SongComponent.vue",
+		9,
+		"resources_js_components_backend_pages_songs_SongComponent_vue"
+	],
+	"./components/backend/pages/songs/SongForm": [
+		"./resources/js/components/backend/pages/songs/SongForm.vue",
+		9,
+		"resources_js_components_backend_pages_songs_SongForm_vue"
+	],
+	"./components/backend/pages/songs/SongForm.vue": [
+		"./resources/js/components/backend/pages/songs/SongForm.vue",
+		9,
+		"resources_js_components_backend_pages_songs_SongForm_vue"
+	],
+	"./components/backend/pages/songs/Songs": [
+		"./resources/js/components/backend/pages/songs/Songs.vue",
+		9,
+		"resources_js_components_backend_pages_songs_Songs_vue"
+	],
+	"./components/backend/pages/songs/Songs.vue": [
+		"./resources/js/components/backend/pages/songs/Songs.vue",
+		9,
+		"resources_js_components_backend_pages_songs_Songs_vue"
+	],
 	"./routes": [
 		"./resources/js/routes.js",
 		9
@@ -53227,6 +53259,18 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\laragon\\\\www\\\\
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/create fake namespace object */
 /******/ 	(() => {
 /******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
@@ -53287,7 +53331,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\laragon\\\\www\\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_backend_pages_dashboard_HomeComponent_vue":1,"resources_js_components_backend_pages_error_404Component_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_backend_pages_dashboard_HomeComponent_vue":1,"resources_js_components_backend_pages_error_404Component_vue":1,"resources_js_components_backend_pages_songs_SongComponent_vue":1,"resources_js_components_backend_pages_songs_SongForm_vue":1,"resources_js_components_backend_pages_songs_Songs_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
