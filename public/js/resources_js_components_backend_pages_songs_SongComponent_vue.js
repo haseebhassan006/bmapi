@@ -19,6 +19,55 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -265,9 +314,151 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("song-table")], 1)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-fluid" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [_c("song-table")], 1)
+          ])
+        ])
+      ])
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container-fluid" }, [
+      _c("div", { staticClass: "page-header" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("h3", [_vm._v("Sample Page")]),
+            _vm._v(" "),
+            _c("ol", { staticClass: "breadcrumb" }, [
+              _c("li", { staticClass: "breadcrumb-item" }, [
+                _c("a", { attrs: { href: "index.html" } }, [_vm._v("Home")])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "breadcrumb-item" }, [_vm._v("Pages")]),
+              _vm._v(" "),
+              _c("li", { staticClass: "breadcrumb-item active" })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("div", { staticClass: "bookmark" }, [
+              _c("ul", [
+                _c("li", [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "javascript:void(0)",
+                        "data-container": "body",
+                        "data-bs-toggle": "popover",
+                        "data-placement": "top",
+                        title: "",
+                        "data-original-title": "Tables"
+                      }
+                    },
+                    [_c("i", { attrs: { "data-feather": "inbox" } })]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "javascript:void(0)",
+                        "data-container": "body",
+                        "data-bs-toggle": "popover",
+                        "data-placement": "top",
+                        title: "",
+                        "data-original-title": "Chat"
+                      }
+                    },
+                    [_c("i", { attrs: { "data-feather": "message-square" } })]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "javascript:void(0)",
+                        "data-container": "body",
+                        "data-bs-toggle": "popover",
+                        "data-placement": "top",
+                        title: "",
+                        "data-original-title": "Icons"
+                      }
+                    },
+                    [_c("i", { attrs: { "data-feather": "command" } })]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "javascript:void(0)",
+                        "data-container": "body",
+                        "data-bs-toggle": "popover",
+                        "data-placement": "top",
+                        title: "",
+                        "data-original-title": "Learning"
+                      }
+                    },
+                    [_c("i", { attrs: { "data-feather": "layers" } })]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _c("i", {
+                      staticClass: "bookmark-search",
+                      attrs: { "data-feather": "star" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("form", { staticClass: "form-inline search-form" }, [
+                    _c(
+                      "div",
+                      { staticClass: "form-group form-control-search" },
+                      [
+                        _c("input", {
+                          attrs: { type: "text", placeholder: "Search.." }
+                        })
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header pb-0" }, [
+      _c("h5", [_vm._v("Songs List")])
+    ])
+  }
+]
 render._withStripped = true
 
 

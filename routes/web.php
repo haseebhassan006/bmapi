@@ -19,8 +19,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/admin',function(){
+// Route::get('/admin',function(){
+
+// });
+Route::get('{any}', function () {
     return view('backend.dashboard');
-});
+})->where('any','.*');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

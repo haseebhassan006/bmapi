@@ -13,6 +13,7 @@
     <!-- page-wrapper Start-->
     <div class="page-wrapper" id="pageWrapper">
       <!-- Page Header Start-->
+      <div id="app">
       @include('layouts.backend.partials.header')
       <!-- Page Header Ends                              -->
       <!-- Page Body Start-->
@@ -20,7 +21,7 @@
         <!-- Page Sidebar Start-->
         @include('layouts.backend.partials.sidebar')
         <!-- Page Sidebar Ends-->
-        <div class="page-body" id="app">
+        <div class="page-body" >
 
             @yield('content')
           <!-- Container-fluid starts-->
@@ -30,6 +31,7 @@
         <!-- footer start-->
         @include('layouts.backend.partials.footer')
       </div>
+    </div>
     </div>
     <!-- latest jquery-->
     @include('layouts.backend.partials.scripts')
