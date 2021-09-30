@@ -10,8 +10,7 @@ use Illuminate\Http\Request;
 class SingerController extends Controller
 {
     public function index(){
-        $singers = Singer::paginate(10);
-
+        $singers = Singer::with('songs')->paginate(10);
         return response()->json($singers);
     }
 
