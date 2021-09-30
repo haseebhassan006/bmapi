@@ -26,7 +26,7 @@ class CategoryController extends Controller
         ]);
 
         $category->category = $request->category;
-        if($category->store()){
+        if($category->save()){
 
             return response()->json('Category Added Successfully');
 
