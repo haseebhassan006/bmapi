@@ -68,6 +68,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -321,7 +327,37 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-sm-12" }, [
           _c("div", { staticClass: "card" }, [
-            _vm._m(1),
+            _c("div", { staticClass: "card-header pb-0" }, [
+              _c("h5", [_vm._v("Songs List")]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticStyle: { float: "right" } },
+                [
+                  _c(
+                    "vs-button",
+                    {
+                      attrs: {
+                        color: "rgb(121, 81, 170)",
+                        gradient: "",
+                        active: true,
+                        to: "/create/songs"
+                      }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fas fa-plus",
+                        staticStyle: { "margin-right": "10px" }
+                      }),
+                      _vm._v(
+                        "\n                                Add User\n                            "
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [_c("song-table")], 1)
           ])
@@ -339,7 +375,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "page-header" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-sm-6" }, [
-            _c("h3", [_vm._v("Sample Page")]),
+            _c("h3", [_vm._v("Songs")]),
             _vm._v(" "),
             _c("ol", { staticClass: "breadcrumb" }, [
               _c("li", { staticClass: "breadcrumb-item" }, [
@@ -448,14 +484,6 @@ var staticRenderFns = [
           ])
         ])
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header pb-0" }, [
-      _c("h5", [_vm._v("Songs List")])
     ])
   }
 ]

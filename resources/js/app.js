@@ -8,6 +8,8 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 import router from "./routes";
+import Vuesax from 'vuesax'
+import 'vuesax/dist/vuesax.css'
 
 
 
@@ -24,6 +26,7 @@ import router from "./routes";
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+Vue.use(Vuesax);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

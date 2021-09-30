@@ -4,7 +4,7 @@
             <div class="page-header">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Sample Page</h3>
+                  <h3>Songs</h3>
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item">Pages</li>
@@ -39,7 +39,13 @@
               <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header pb-0">
-                    <h5>Songs List</h5></span>
+                    <h5>Songs List</h5>
+                       <div style="float: right;">
+                            <vs-button color="rgb(121, 81, 170)" gradient :active="true" to="/create/songs">
+                                <i class="fas fa-plus" style="margin-right: 10px;" ></i>
+                                Add User
+                            </vs-button>
+                     </div>
                   </div>
                   <div class="card-body">
       <song-table></song-table>
