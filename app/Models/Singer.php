@@ -2,10 +2,16 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Song;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Singer extends Model
 {
     use HasFactory;
+
+    public function songs(){
+
+        return $this->hasMany(Song::class);
+    }
 }
