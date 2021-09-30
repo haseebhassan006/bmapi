@@ -2233,6 +2233,12 @@ var routes = [{
     return setComponent("songs/SongForm");
   },
   name: "Create Song"
+}, {
+  path: "/create/categories",
+  component: function component() {
+    return setComponent("category/CategoryForm");
+  },
+  name: "Create Song"
 } // {
 //     path: "/edit/user/:id",
 //     component: () => setComponent("management/user/UserForm"),
@@ -80022,6 +80028,36 @@ var map = {
 		"./resources/js/components/ExampleComponent.vue",
 		9
 	],
+	"./components/backend/pages/category/CategoryComponent": [
+		"./resources/js/components/backend/pages/category/CategoryComponent.vue",
+		9,
+		"resources_js_components_backend_pages_category_CategoryComponent_vue"
+	],
+	"./components/backend/pages/category/CategoryComponent.vue": [
+		"./resources/js/components/backend/pages/category/CategoryComponent.vue",
+		9,
+		"resources_js_components_backend_pages_category_CategoryComponent_vue"
+	],
+	"./components/backend/pages/category/CategoryFormComponent": [
+		"./resources/js/components/backend/pages/category/CategoryFormComponent.vue",
+		9,
+		"resources_js_components_backend_pages_category_CategoryFormComponent_vue"
+	],
+	"./components/backend/pages/category/CategoryFormComponent.vue": [
+		"./resources/js/components/backend/pages/category/CategoryFormComponent.vue",
+		9,
+		"resources_js_components_backend_pages_category_CategoryFormComponent_vue"
+	],
+	"./components/backend/pages/category/CategoryTable": [
+		"./resources/js/components/backend/pages/category/CategoryTable.vue",
+		9,
+		"resources_js_components_backend_pages_category_CategoryTable_vue"
+	],
+	"./components/backend/pages/category/CategoryTable.vue": [
+		"./resources/js/components/backend/pages/category/CategoryTable.vue",
+		9,
+		"resources_js_components_backend_pages_category_CategoryTable_vue"
+	],
 	"./components/backend/pages/dashboard/HomeComponent": [
 		"./resources/js/components/backend/pages/dashboard/HomeComponent.vue",
 		9,
@@ -80249,7 +80285,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\laragon\\\\www\\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_backend_pages_dashboard_HomeComponent_vue":1,"resources_js_components_backend_pages_error_404Component_vue":1,"resources_js_components_backend_pages_songs_SongComponent_vue":1,"resources_js_components_backend_pages_songs_SongFormComponent_vue":1,"resources_js_components_backend_pages_songs_Songs_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_backend_pages_category_CategoryComponent_vue":1,"resources_js_components_backend_pages_category_CategoryFormComponent_vue":1,"resources_js_components_backend_pages_category_CategoryTable_vue":1,"resources_js_components_backend_pages_dashboard_HomeComponent_vue":1,"resources_js_components_backend_pages_error_404Component_vue":1,"resources_js_components_backend_pages_songs_SongComponent_vue":1,"resources_js_components_backend_pages_songs_SongFormComponent_vue":1,"resources_js_components_backend_pages_songs_Songs_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

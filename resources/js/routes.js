@@ -29,6 +29,12 @@ const routes = [
         component: () => setComponent("songs/SongForm"),
         name: "Create Song",
     },
+    {
+        path: "/create/categories",
+        component: () => setComponent("category/CategoryForm"),
+        name: "Create Song",
+    },
+
 
     // {
     //     path: "/edit/user/:id",
