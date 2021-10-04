@@ -65,12 +65,6 @@ import CategoryModal from "./CategoryFormComponent";
        components:{
            CategoryTable,
            CategoryModal
-       },
-          data:() => ({
-      active: false,
-      input1: '',
-      input2: '',
-      checkbox1: false
-    })
+       }
  }
 </script>

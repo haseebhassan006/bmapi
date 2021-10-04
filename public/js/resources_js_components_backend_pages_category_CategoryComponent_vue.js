@@ -78,14 +78,6 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     CategoryTable: _CategoryTable__WEBPACK_IMPORTED_MODULE_0__["default"],
     CategoryModal: _CategoryFormComponent__WEBPACK_IMPORTED_MODULE_1__["default"]
-  },
-  data: function data() {
-    return {
-      active: false,
-      input1: '',
-      input2: '',
-      checkbox1: false
-    };
   }
 });
 
